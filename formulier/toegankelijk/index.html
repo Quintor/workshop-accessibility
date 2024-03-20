@@ -34,6 +34,7 @@
                 required="required"
                 aria-invalid="false"
                 aria-errormessage="voornaam-error"
+                autocomplete="given-name"
               />
               <span id="voornaam-error" class="error-span" aria-live="polite">
                 Voornaam is verplicht.
@@ -42,7 +43,7 @@
 
             <div>
               <label for="achternaam">Achternaam: </label>
-              <input type="text" id="achternaam" name="achternaam" />
+              <input type="text" id="achternaam" name="achternaam" autocomplete="family-name" />
             </div>
             <div>
               <label for="geboortedatum">Geboortedatum:</label>
@@ -75,6 +76,7 @@
                 aria-invalid="true"
                 aria-describedby="gebruikersnaam-hint"
                 aria-errormessage="gebruikersnaam-error"
+                autocomplete="username"
               />
               <span
                 id="gebruikersnaam-error"
@@ -100,6 +102,7 @@
                 required="required"
                 aria-invalid="true"
                 aria-errormessage="email-error"
+                autocomplete="off"
               />
               <span id="email-error" class="error-span" role="alert">
                 Email is verplicht.
@@ -137,11 +140,11 @@
 
             <div>
               <label for="straatnaam">Straatnaam: </label>
-              <input type="text" id="straatnaam" name="straatnaam" />
+              <input type="text" id="straatnaam" name="straatnaam" autocomplete="street-address" />
             </div>
             <div>
               <label for="postcode">Postcode:</label>
-              <input type="text" id="postcode" name="postcode" />
+              <input type="text" id="postcode" name="postcode" autocomplete="postal-code"/>
             </div>
             <div>
               <label for="land">Land:</label>
