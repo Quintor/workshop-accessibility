@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Het definiëren van de klassen hier, hoewel niet in lijn met de beste praktijken van TailwindCSS,
+is een bewuste keuze gericht op het verbeteren van leesbaarheid en het behouden van duidelijkheid
+tijdens presentaties en workshops, om overvolle HTML te vermijden. */
+
+/* Defining the classes here, although not in line with TailwindCSS best practices,
+is a deliberate choice aimed at improving readability and maintaining clarity
+during presentations and workshops, avoiding overcrowding the HTML. */
+
+.main {
+  @apply flex min-h-screen flex-col  bg-gradient-to-b from-[#A13B4A] to-red-950 py-10 items-center justify-center text-white;
+}
+.home-container {
+  @apply container flex flex-col items-center justify-center gap-20 px-4 py-16;
+}
+.home-header {
+  @apply text-5xl font-extrabold tracking-tight sm:text-[5rem];
+}
+.home-grid {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-16;
+}
+.home-grid-section {
+  @apply flex flex-col gap-10 rounded-xl bg-white/10 hover:bg-white/20 p-8;
+}
+.section-header {
+  @apply text-3xl font-bold text-center;
+}
+.section-links {
+  @apply text-lg p-4 rounded-xl bg-red-700 hover:bg-red-500;
+}
+.section-ul {
+  @apply flex gap-16 flex-col items-center;
+}
+.nav-ul {
+  @apply flex gap-8 items-center px-8;
+}
+.nav-links {
+  @apply text-white hover:bg-white hover:text-[#A13B4A] p-3 rounded-lg;
+}
+.dropdown {
+  @apply relative inline-block;
+}
+.icon-button {
+  @apply bg-[#520510] text-white p-4;
+}
+.dropdown-ul {
+  @apply group-focus-within:flex group-hover:flex hidden absolute gap-2 p-2 flex-col bg-gray-100 min-w-36 items-center drop-shadow-lg rounded;
+}
+.dropdown-links {
+  @apply hover:bg-[#A13B4A] hover:text-white w-full text-center p-2 rounded-lg;
+}
+.nav-links-niet {
+  @apply text-gray-400 hover:bg-white p-3 rounded-lg;
+}
+.icon-button-niet {
+  @apply bg-[#520510] text-red-300 p-4;
+}
+.blog-main {
+  @apply max-w-4xl m-auto;
+}
+.go-home {
+  @apply self-start p-2 rounded bg-white text-[#A13B4A] hover:bg-red-900 hover:text-white font-bold;
+}
+.blog-image-wrapper {
+  @apply relative w-[60rem] mx-auto mt-20;
+  img {
+    @apply h-[25rem] w-full object-cover rounded-md;
+  }
+}
+.overlay {
+  @apply absolute inset-0 bg-gray-700 opacity-70 rounded-md;
+}
+.header-wrapper {
+  @apply absolute inset-0 flex items-center justify-center;
+  h1 {
+    @apply text-white text-6xl font-bold;
+  }
+  h2 {
+    @apply text-gray-400 text-[54px];
+  }
+}
+.blog-header {
+  @apply text-4xl font-bold;
+}
+.content-section {
+  @apply mt-12 flex flex-col gap-4;
+}
+.content {
+  @apply text-xl flex flex-col gap-8 tracking-wider;
+}
+.code {
+  @apply border-white border-[.1rem] p-4 max-w-2xl self-center mt-10;
+}
+.code-niet {
+  @apply text-gray-400 border-2 p-2 m-2;
+}
+.codepen-button {
+  @apply cursor-pointer text-red-800 p-3 font-bold ml-2 rounded bg-white hover:bg-red-800 hover:text-white;
+}
+.main-niet {
+  @apply px-20 text-gray-400 flex min-h-screen flex-col  bg-gradient-to-b from-[#A13B4A] to-red-950 py-10 items-center;
+}
+.go-home-niet {
+  @apply self-start p-2 rounded hover:bg-red-400 hover:text-black mb-4;
+}
+.blog-grid-niet {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-16;
+}
+.blog-section-niet {
+  @apply flex flex-col gap-8 items-center rounded-xl bg-white/10 hover:bg-white/20 p-6;
+}
+.form-wrapper {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-16;
+}
+fieldset {
+  @apply flex flex-col gap-8 rounded-xl bg-gray-900/60 hover:bg-gray-900/40 p-6;
+  div {
+    @apply flex flex-col justify-between gap-2;
+  }
+}
+legend {
+  @apply text-xl font-bold;
+}
+.star {
+  @apply text-red-500 text-xl font-bold;
+}
+input {
+  @apply min-h-10 rounded text-black p-2;
+}
+.error-span {
+  @apply text-red-500 text-xl font-bold;
+}
+
+.form-button {
+  @apply relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700 m-auto aria-busy:text-red-700 aria-busy:hover:text-red-700 text-white;
+  span {
+    @apply transition-all duration-[0.2s] font-bold;
+  }
+}
+select {
+  @apply text-black min-w-[15.5rem] min-h-10 rounded;
+}
+
+[role="menu"] {
+  display: none;
+}
+[aria-expanded="true"] + [role="menu"] {
+  display: block;
+}
+.button {
+  @apply relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700;
+}
+
+.button-text {
+  @apply text-gray-400 transition-all duration-[0.2s] font-bold;
+}
+
+.button-loading .button-text {
+  @apply invisible opacity-0;
+}
+
+.button-loading::after {
+  @apply content-[""] absolute w-4 h-4 animate-spinner m-auto rounded-full border-t-white border-4 border-solid border-transparent inset-0;
+}

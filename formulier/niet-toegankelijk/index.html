@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../index.css" />
+  </head>
+  <body>
+    <div class="main-niet">
+      <h1 class="text-5xl font-bold mb-16">Web accessibility Formulier</h1>
+      <a href="/" class="go-home-niet"> Ga terug</a>
+      <div class="blog-grid-niet">
+        <div class="blog-section-niet">
+          <h1>Personeelsinformatie</h1>
+          <div>
+            <p>Voornaam: <span class="text-red-500">*</span></p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="voornaam"
+              name="voornaam"
+            />
+          </div>
+          <div>
+            <p>Achternaam:</p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="achternaam"
+              name="achternaam"
+            />
+          </div>
+          <div>
+            <p>Geboortedatum:</p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="geboortedatum"
+              name="geboortedatum"
+            />
+          </div>
+        </div>
+        <div class="blog-section-niet">
+          <h1>Account</h1>
+          <div>
+            <p>Gebruikersnaam: <span class="text-red-500">*</span></p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="gebruikersnaam"
+              name="gebruikersnaam"
+            />
+          </div>
+          <span>
+            Maak je gebruikersnaam robuust: Combineer hoofdletters, kleine
+            letters, cijfers en symbolen voor een sterke en ondoordringbare
+            keuze.</span
+          >
+          <div>
+            <p>Email: <span class="text-red-500">*</span></p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div>
+            <p>Wachtwoord: <span class="text-red-500">*</span></p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="wachtwoord"
+              name="wachtwoord"
+            />
+          </div>
+        </div>
+        <div class="blog-section-niet">
+          <h1>Adres</h1>
+          <div>
+            <p>Straatnaam:</p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="straatnaam"
+              name="straatnaam"
+            />
+          </div>
+          <div>
+            <p>Postcode:</p>
+            <input
+              type="text"
+              class="min-h-10 rounded"
+              id="postcode"
+              name="postcode"
+            />
+          </div>
+          <div>
+            <p>Land:</p>
+            <select
+              class="text-black min-w-60 min-h-10 rounded"
+              id="land"
+              name="land"
+            >
+              <option value="Nederland">Nederland</option>
+              <option value="België">Belgi&#235;</option>
+              <option value="Duitsland">Duitsland</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="button"
+        onclick="this.classList.toggle('button-loading')
+          "
+      >
+        <!-- Voeg hier een opslaan icoon toe zonder alt-->
+        <span class="button-text">Opslaan</span>
+      </button>
+    </div>
+  </body>
+</html>

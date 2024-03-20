@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../index.css" />
+    <script>
+      function goToCodePen() {
+        window.location.href = "https://codepen.io/adhamah/pen/OJGRdYe";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main-niet">
+      <a href="/" class="go-home-niet"> Go Home</a>
+      <div class="blog-image-wrapper">
+        <img
+          class="h-[25rem] w-full object-cover rounded-md"
+          src="../../assets/database.jpeg"
+        />
+        <div class="header-wrapper">
+          <h2>MySQL interdiction</h2>
+        </div>
+      </div>
+      <div class="mt-12">
+        <h4 class="text-[40px]">What is database?</h4>
+        <div class="text-[18px]">
+          A structured set of computerized data with an accessible interface:
+          <div>1. A collection of data</div>
+
+          <div>2. A method to access and manipulate that data.</div>
+        </div>
+        <h3 class="text-[40px] mt-12">
+          What is the deference between SQL and MySQL?
+        </h3>
+        <div class="text-[18px]">
+          SQL (Structured Query Language) is a language used to retrieve
+          information from databases. For instance, a query to find all users
+          older than 30 might look like this:
+          <br />
+          <div class="code-niet">SELECT * FROM Users WHERE Age => 30;</div>
+          <div class="text-[18px]">
+            MySQL is a specific type of relational database management system
+            (RDBMS) that uses SQL. Other examples of RDBMS include Oracle
+            Database and PostgreSQL. While there may be slight differences in
+            syntax between these systems, they all adhere to a common SQL
+            standard.
+            <br />
+            Therefore, what distinguishes a database management system are the
+            features it offers, rather than the language it uses.
+          </div>
+        </div>
+
+        <p class="mt-10">
+          Click here to see this page
+          <span onclick="goToCodePen()">codepen</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
