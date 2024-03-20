@@ -57,6 +57,6 @@
 [Digitale toegankelijkheid: Fact & Figures](https://www.webaccessibilityaward.nl/digitale-toegankelijkheid/fact-figures/)
 
 ## Van niet-toegankelijk naar toegankelijk stappen
-### [Blog](https://adham-tech.notion.site/Blog-8eb044d4b764461ea2224531d8f4f634?pvs=4)
-### [Formulier](https://adham-tech.notion.site/Formulier-91cf2d3d6dac4210a2a77c717f86ac49)
-### [Navigatie](https://adham-tech.notion.site/Navigatie-05d3c8e4453f4c21ad372034ce8c5d88?pvs=4)
+### [Blog](blog/blog.md)
+### [Formulier](formulier/formulier.md)
+### [Navigatie](navigatie/navigatie.md)
