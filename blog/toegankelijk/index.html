@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../../index.css" />
+
+    <title>Web accessibility - Blog</title>
+  </head>
+  <body class="main">
+    <main class="blog-main">
+      <div class="w-full flex gap-6">
+        <a class="sr-only" href="#what-is-database">Skip To what is database</a>
+        <a class="sr-only" href="#deference-between-SQL-and-MySQL"
+          >Skip to deference between SQL and MySQL</a
+        >
+        <a href="/" class="go-home"> Go Home</a>
+      </div>
+      <section class="blog-image-wrapper">
+        <img src="../../assets/database.jpeg" role="presentation" alt="" />
+        <div class="overlay"></div>
+        <div class="header-wrapper">
+          <h1>MySQL interdiction</h1>
+        </div>
+      </section>
+      <section id="what-is-database" class="content-section">
+        <h2 class="blog-header">What is database?</h2>
+        <div class="content">
+          <p>
+            A database is a structured collection of computerized data with an
+            accessible interface, consisting of:
+          </p>
+          <ol class="list-decimal ml-10">
+            <li>A collection of data.</li>
+
+            <li>A method to access and manipulate that data.</li>
+          </ol>
+        </div>
+        <h2 class="blog-header" id="deference-between-SQL-and-MySQL">
+          What is the deference between SQL and MySQL?
+        </h2>
+
+        <div class="content">
+          <p>
+            SQL &#40;Structured Query Language&#41; is a language used to
+            retrieve information from databases. For instance, a query to find
+            all users older than 30 might look like this:
+          </p>
+          <p>
+            <code class="code"> SELECT * FROM Users WHERE Age => 30;</code>
+          </p>
+          <p>
+            MySQL is a specific type of relational database management system
+            &#40;RDBMS&#41; that uses SQL. Other examples of RDBMS include
+            Oracle Database and PostgreSQL. While there may be slight
+            differences in syntax between these systems, they all adhere to a
+            common SQL standard.
+          </p>
+          <p>
+            Therefore, what distinguishes a database management system are the
+            features it offers, rather than the language it uses.
+          </p>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a
+            class="codepen-button"
+            target="_blank"
+            href="https://codepen.io/adhamah/pen/LYbbmPO"
+          >
+            See this page codepen<span class="sr-only"> in new tab</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

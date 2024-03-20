@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web accessibility - Formulier</title>
+    <link rel="stylesheet" href="../../index.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="text-5xl font-bold mb-16">Web accessibility Formulier</h1>
+      <a href="/" class="go-home ml-10"> Ga terug</a>
+      <form class="flex flex-col">
+        <div class="form-wrapper">
+          <fieldset>
+            <legend>Personeelsinformatie</legend>
+            <span aria-hidden="true"
+              >Velden die gemarkeerd zijn met een
+              <span class="star">*</span> zijn verplicht</span
+            >
+
+            <div>
+              <label for="voornaam"
+                >Voornaam: <span aria-hidden="true" class="star">*</span></label
+              >
+              <input
+                type="text"
+                id="voornaam"
+                name="voornaam"
+                required="required"
+                aria-invalid="false"
+                aria-errormessage="voornaam-error"
+              />
+              <span id="voornaam-error" class="error-span" aria-live="polite">
+                Voornaam is verplicht.
+              </span>
+            </div>
+
+            <div>
+              <label for="achternaam">Achternaam: </label>
+              <input type="text" id="achternaam" name="achternaam" />
+            </div>
+            <div>
+              <label for="geboortedatum">Geboortedatum:</label>
+              <input
+                type="date"
+                class="input min-w-[16.5rem]"
+                id="geboortedatum"
+                name="geboortedatum"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Account</legend>
+            <span aria-hidden="true"
+              >Velden die gemarkeerd zijn met een
+              <span class="star">*</span> zijn verplicht</span
+            >
+
+            <div>
+              <label for="gebruikersnaam"
+                >Gebruikersnaam:
+                <span aria-hidden="true" class="star">*</span></label
+              >
+              <input
+                type="text"
+                id="gebruikersnaam"
+                name="gebruikersnaam"
+                required="required"
+                aria-invalid="true"
+                aria-describedby="gebruikersnaam-hint"
+                aria-errormessage="gebruikersnaam-error"
+              />
+              <span
+                id="gebruikersnaam-error"
+                class="error-span"
+                aria-live="polite"
+              >
+                Gebruikersnaam is verplicht.
+              </span>
+              <span id="gebruikersnaam-hint" class="text-sm text-white">
+                Maak je gebruikersnaam robuust: <br />Combineer hoofdletters,
+                kleine letters, <br />cijfers en symbolen voor een sterke en
+                ondoordringbare keuze.
+              </span>
+            </div>
+            <div>
+              <label for="email"
+                >Email: <span aria-hidden="true" class="star">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required="required"
+                aria-invalid="true"
+                aria-errormessage="email-error"
+              />
+              <span id="email-error" class="error-span" role="alert">
+                Email is verplicht.
+              </span>
+            </div>
+            <div>
+              <label for="wachtwoord"
+                >Wachtwoord:
+                <span aria-hidden="true" class="star">*</span></label
+              >
+              <input
+                type="password"
+                aria-describedby="wachtwoord-hint"
+                id="wachtwoord"
+                name="wachtwoord"
+                required="required"
+                aria-invalid="false"
+                aria-errormessage="wachtwoord-error"
+              />
+              <span id="wachtwoord-error" class="error-span" aria-live="polite">
+                Wachtwoord is verplicht.
+              </span>
+              <span id="wachtwoord-hint" class="text-sm text-white">
+                Wachtwoord moet minimaal 8 karakters lang zijn.
+              </span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adres</legend>
+            <span aria-hidden="true"
+              >Velden die gemarkeerd zijn met een
+              <span class="star">*</span> zijn verplicht</span
+            >
+
+            <div>
+              <label for="straatnaam">Straatnaam: </label>
+              <input type="text" id="straatnaam" name="straatnaam" />
+            </div>
+            <div>
+              <label for="postcode">Postcode:</label>
+              <input type="text" id="postcode" name="postcode" />
+            </div>
+            <div>
+              <label for="land">Land:</label>
+              <select id="land" name="land">
+                <option value="Nederland">Nederland</option>
+                <option value="België">Belgi&#235;</option>
+                <option value="Duitsland">Duitsland</option>
+              </select>
+            </div>
+          </fieldset>
+        </div>
+
+        <button
+          aria-busy="false"
+          aria-label="Indienen"
+          onclick="this.classList.toggle('button-loading')
+                   this.setAttribute('aria-busy',
+                   this.getAttribute('aria-busy') === 'true' ? 'false' : 'true')
+                   this.getAttribute('aria-label') === 'Indienen' ?
+                   this.setAttribute('aria-label', 'bezig met laden') :
+                   this.setAttribute('aria-label', 'Indienen' )"
+          type="submit"
+          class="form-button"
+        >
+          <span>Indienen</span>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
