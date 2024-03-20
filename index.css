@@ -135,7 +135,7 @@ input {
 }
 
 .form-button {
-  @apply relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700 m-auto aria-busy:text-red-700 aria-busy:hover:text-red-700 text-white;
+  @apply flex gap-2 relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700 m-auto aria-busy:text-red-700 aria-busy:hover:text-red-700 text-white;
   span {
     @apply transition-all duration-[0.2s] font-bold;
   }
@@ -151,7 +151,7 @@ select {
   display: block;
 }
 .button {
-  @apply relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700;
+  @apply relative rounded-md mt-20 min-w-28 px-4 py-2 bg-red-700 flex gap-2;
 }
 
 .button-text {

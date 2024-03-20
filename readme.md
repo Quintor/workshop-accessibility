@@ -55,3 +55,11 @@
 [DigiToegankelijk](https://www.digitoegankelijk.nl/)
 
 [Digitale toegankelijkheid: Fact & Figures](https://www.webaccessibilityaward.nl/digitale-toegankelijkheid/fact-figures/)
+
+## Van niet-toegankelijk naar toegankelijk stappen
+
+### [Blog](blog/blog.md)
+
+### [Formulier](formulier/formulier.md)
+
+### [Navigatie](navigatie/navigatie.md)
