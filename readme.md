@@ -9,8 +9,8 @@
 
 ### Als je komt tegen een probleem met de installatie van de afhankelijkheden, probeer dan de volgende stappen:
 
-- Verwijder de `node_modules` directory <br/> `rm -rf node_modules`
-- Verwijder het `package-lock.json` bestand <br/> `rm package-lock.json`
+- Verwijder de `node_modules` directory <br/> 
+- Verwijder het `package-lock.json` bestand 
 - Installeer de afhankelijkheden opnieuw <br/> `npm install`
 
 ## Inschrijfformulier
