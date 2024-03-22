@@ -1,5 +1,17 @@
 # Web Accessibility hands-on Quintor
 
+## Instructies om het project starten:
+- Kloon het project <br/> `git clone https://github.com/Quintor/workshop-accessibility.git`
+- Ga naar de projectdirectory <br/> `cd workshop-accessibility`
+- Installeer de benodigde afhankelijkheden <br/> `npm install`
+- Start het project <br/> `npm start`
+
+### Als je komt tegen een probleem met de installatie van de afhankelijkheden, probeer dan de volgende stappen:
+- Verwijder de `node_modules` directory <br/> `rm -rf node_modules`
+- Verwijder het `package-lock.json` bestand <br/> `rm package-lock.json`
+- Installeer de afhankelijkheden opnieuw <br/> `npm install`
+
+
 ## Inschrijfformulier
 
 [Inschrijfformulier](https://rni-webform.rvig.nl/nl)
@@ -55,3 +67,11 @@
 [DigiToegankelijk](https://www.digitoegankelijk.nl/)
 
 [Digitale toegankelijkheid: Fact & Figures](https://www.webaccessibilityaward.nl/digitale-toegankelijkheid/fact-figures/)
+
+## Van niet-toegankelijk naar toegankelijk stappen
+
+### [Blog](blog/blog.md)
+
+### [Formulier](formulier/formulier.md)
+
+### [Navigatie](navigatie/navigatie.md)
